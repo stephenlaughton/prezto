@@ -147,7 +147,7 @@ function dark() {
 
 # list and change theme
 function themes() {
-    basename `ls  **/.config/base16-shell/*.dark.sh`
+    basename `ls  ../../.config/base16-shell/*.dark.sh`
     echo "Current theme is $THEME"
 }
 
