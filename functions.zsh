@@ -151,6 +151,18 @@ function themes() {
     echo "Current theme is $THEME"
 }
 
+# change theme to given name
 function theme() {
     export THEME="base16-$1" && reload!
+}
+
+# smart git alias with auto-status
+function g() {
+    if [[ $# > 0 ]]; then
+        # if there are arguments, send them to git
+        git $@
+    else
+        # otherwise, run git status
+        git status
+    fi
 }

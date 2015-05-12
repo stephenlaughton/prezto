@@ -27,7 +27,7 @@ zstyle -s ':prezto:module:git:status:ignore' submodules '_git_status_ignore_subm
 #
 
 # Git
-alias g='git'
+# alias g='git'
 
 # Branch (b)
 alias gb='git branch'
@@ -44,6 +44,7 @@ alias gbS='git show-branch -a'
 # Commit (c)
 alias gc='git commit --verbose'
 alias gca='git commit --verbose --all'
+alias gcma='git commit --verbose --all --message'
 alias gcm='git commit --message'
 alias gco='git checkout'
 alias gcO='git checkout --patch'
