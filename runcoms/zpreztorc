@@ -37,7 +37,10 @@ zstyle ':prezto:load' pmodule \
   'tmux' \
   'rails' \
   'homebrew' \
-  'osx'
+  'osx' \
+  'fasd' \
+  'syntax-highlighting' \
+  'history-substring-search'
 
 #
 # Editor
