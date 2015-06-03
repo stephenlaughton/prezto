@@ -6,6 +6,7 @@
 #
 
 export DOTFILES=$HOME/.dotfiles
+export HOMEBREW_GITHUB_API_TOKEN=4eacc0692e824078f435359009fea857669318e7
 
 # reload zsh config
 alias reload!='source ~/.zshrc'
