@@ -173,7 +173,11 @@ function reload!() {
     source ~/.zshrc
 
     if [[ -n "$TMUX" ]]; then
-        printf "i am in tmux\n"
-        tmux source-file ~/.tmux.conf
+        if [[ $BACKGROUND == dark ]]; then
+            tmux source-file ~/.dotfiles/tmux/dark_theme.conf
+        else
+            tmux source-file ~/.dotfiles/tmux/light_theme.conf
+        fi
+        
     fi
 }
