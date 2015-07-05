@@ -173,6 +173,7 @@ function reload!() {
     source ~/.zshrc
 
     if [[ -n "$TMUX" ]]; then
+        printf "i am in tmux\n"
         tmux source-file ~/.tmux.conf
     fi
 }
