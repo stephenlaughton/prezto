@@ -138,12 +138,10 @@ function hl() {
 
 # set the background color to light
 function light() {
-    printf "hello from light\n"
     export BACKGROUND="light" && reload!
 }
 
 function dark() {
-    printf "hello from dark\n"
     export BACKGROUND="dark" && reload!
 }
 
