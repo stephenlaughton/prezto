@@ -138,10 +138,12 @@ function hl() {
 
 # set the background color to light
 function light() {
+    printf "hello from light\n"
     export BACKGROUND="light" && reload!
 }
 
 function dark() {
+    printf "hello from dark\n"
     export BACKGROUND="dark" && reload!
 }
 
@@ -164,5 +166,13 @@ function g() {
     else
         # otherwise, run git status
         git status
+    fi
+}
+
+function reload!() {
+    source ~/.zshrc
+
+    if [[ -n "$TMUX" ]]; then
+        tmux source-file ~/.tmux.conf
     fi
 }
