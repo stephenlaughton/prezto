@@ -169,13 +169,4 @@ function g() {
 
 function reload!() {
     source ~/.zshrc
-
-    if [[ -n "$TMUX" ]]; then
-        if [[ $BACKGROUND == dark ]]; then
-            tmux source-file ~/.dotfiles/tmux/dark_theme.conf
-        else
-            tmux source-file ~/.dotfiles/tmux/light_theme.conf
-        fi
-        
-    fi
 }

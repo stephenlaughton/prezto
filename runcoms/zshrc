@@ -29,6 +29,16 @@ if [ -z "$BACKGROUND" ]; then
     export BACKGROUND="dark"
 fi
 
+# Set TMUX theme
+if [[ -n "$TMUX" ]]; then
+    if [[ $BACKGROUND == dark ]]; then
+        tmux source-file ~/.dotfiles/tmux/dark_theme.conf
+    else
+        tmux source-file ~/.dotfiles/tmux/light_theme.conf
+    fi
+    ~/.tmux/plugins/tpm/tpm
+fi
+
 BASE16_SHELL="$DOTFILES/.config/base16-shell/$THEME.$BACKGROUND.sh"
 # [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 source $BASE16_SHELL
