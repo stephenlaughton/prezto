@@ -32,13 +32,13 @@ fi
 # Set TMUX theme
 if [[ -n "$TMUX" ]]; then
 
-    tmux setenv TMUX_BACKGROUND $BACKGROUND
-    tmux source-file ~/.tmux.conf
-    # if [[ $BACKGROUND == dark ]]; then
+    # tmux setenv -g TMUX_BACKGROUND $BACKGROUND
+    # tmux source-file ~/.tmux.conf
+    if [[ $BACKGROUND == dark ]]; then
         
-    # else
-    #     tmux source-file ~/.dotfiles/tmux/light_theme.conf
-    # fi
+    else
+        tmux source-file ~/.dotfiles/tmux/light.conf
+    fi
 fi
 
 BASE16_SHELL="$DOTFILES/.config/base16-shell/$THEME.$BACKGROUND.sh"
