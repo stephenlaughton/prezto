@@ -23,7 +23,7 @@ fi
 
 # Base16 Shell
 if [ -z "$THEME" ]; then
-    export THEME="base16-solarized"
+    export THEME="base16-flat"
 fi
 if [ -z "$BACKGROUND" ]; then
     export BACKGROUND="dark"
