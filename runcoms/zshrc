@@ -8,6 +8,10 @@
 export DOTFILES=$HOME/.dotfiles
 export HOMEBREW_GITHUB_API_TOKEN=4eacc0692e824078f435359009fea857669318e7
 
+# Set NVM
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
 # reload zsh config
 # alias reload!='source ~/.zshrc && tmux source-file ~/.tmux.conf'
 
@@ -35,7 +39,7 @@ if [[ -n "$TMUX" ]]; then
     tmux setenv -g TMUX_BACKGROUND $BACKGROUND
     tmux source-file ~/.tmux.conf
     # if [[ $BACKGROUND == dark ]]; then
-        
+
     # else
     #     tmux source-file ~/.dotfiles/tmux/light.conf
     # fi
