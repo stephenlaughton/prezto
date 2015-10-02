@@ -6,14 +6,13 @@
 #
 
 export DOTFILES=$HOME/.dotfiles
-export HOMEBREW_GITHUB_API_TOKEN=4eacc0692e824078f435359009fea857669318e7
 
 # Set NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
-# reload zsh config
-# alias reload!='source ~/.zshrc && tmux source-file ~/.tmux.conf'
+# Source Homebrew Access Token
+source ~/.brewaccess
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
