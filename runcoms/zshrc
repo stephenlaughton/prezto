@@ -8,9 +8,9 @@
 export DOTFILES=$HOME/.dotfiles
 
 # Set VSCode as editor
-export EDITOR="code --wait"
-export HOMEBREW_EDITOR="code --wait"
-export VISUAL="code --wait"
+export EDITOR="code --wait --new-window"
+export HOMEBREW_EDITOR="code --wait --new-window"
+export VISUAL="code --wait --new-window"
 
 # Set NVM
 export NVM_DIR=~/.nvm
