@@ -7,6 +7,9 @@
 
 export DOTFILES=$HOME/.dotfiles
 
+# Set VSCode as editor
+export EDITOR="code --wait"
+
 # Set NVM
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
