@@ -13,7 +13,8 @@ export HOMEBREW_EDITOR="code --wait --new-window"
 export VISUAL="code --wait --new-window"
 
 # Set chruby
-source /usr/local/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix chruby)/share/chruby/chruby.sh
+source $(brew --prefix chruby)/share/chruby/auto.sh
 
 # Set NVM
 export NVM_DIR=~/.nvm
