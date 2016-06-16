@@ -8,9 +8,9 @@
 export DOTFILES=$HOME/.dotfiles
 
 # Set VSCode as editor
-export EDITOR="code --wait --new-window"
-export HOMEBREW_EDITOR="code --wait --new-window"
-export VISUAL="code --wait --new-window"
+export EDITOR="vim"
+export HOMEBREW_EDITOR="vim"
+export VISUAL="vim"
 
 # Set chruby
 source $(brew --prefix chruby)/share/chruby/chruby.sh
