@@ -33,6 +33,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/functions.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/functions.zsh"
 fi
 
+# Completions
+compinit
+
 # Base16 Shell
 if [ -z "$THEME" ]; then
     export THEME="base16-flat"
