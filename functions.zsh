@@ -147,7 +147,7 @@ function dark() {
 
 # list and change theme
 function themes() {
-    basename `ls  $DOTFILES/.config/base16-shell/*.dark.sh`
+    basename `ls  $DOTFILES/.config/base16-shell/*.sh`
     echo "Current theme is $THEME"
 }
 
@@ -165,11 +165,6 @@ function g() {
         # otherwise, run git status
         git status
     fi
-}
-
-# Open VSCode
-function code() {
-    VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;
 }
 
 function reload!() {
