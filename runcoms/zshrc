@@ -53,6 +53,6 @@ if [[ -n "$TMUX" ]]; then
     # fi
 fi
 
-BASE16_SHELL="$DOTFILES/.config/base16-shell/$THEME.sh"
+BASE16_SHELL="$DOTFILES/.config/base16-shell/scripts/$THEME.sh"
 # [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 source $BASE16_SHELL
